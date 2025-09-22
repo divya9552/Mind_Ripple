@@ -1,0 +1,117 @@
+/* Background */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+}
+
+/* App Container */
+.app {
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  width: 420px;
+  max-width: 95%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Title */
+.title {
+  font-size: 2.4rem;
+  margin-bottom: 5px;
+  color: #ffe259;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  color: #ddd;
+}
+
+/* Quote Box */
+.quote-box {
+  background: rgba(255,255,255,0.15);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.quote {
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.author {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #ffe259;
+}
+
+/* Buttons Row */
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Default Button */
+.btn {
+  background: #ffe259;
+  border: none;
+  color: #333;
+  padding: 10px 15px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #ffcc00;
+}
+
+/* Social Buttons */
+.social.twitter {
+  background: #1da1f2;
+  color: white;
+}
+
+.social.twitter:hover {
+  background: #0d8ddb;
+}
+
+.social.linkedin {
+  background: #0077b5;
+  color: white;
+}
+
+.social.linkedin:hover {
+  background: #005f8e;
+}
+
+/* Loading */
+.loading {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
